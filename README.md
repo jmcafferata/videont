@@ -98,6 +98,19 @@ Antes de usar el script, necesitas instalar algunos paquetes:
 
 ## 🎉 ¡Listo, sos unx capx!
 
+# 🤖 Cómo conseguir la clave de la API de OpenAI
+
+¡No hay drama! Acá te dejo un mini tutorial re cortito para que consigas tu clave de la API de OpenAI. 💪
+
+La clave API de OpenAI te va servir en cualquier aplicación que necesite usar de inteligencia artificial hecha por OpenAI.🥲
+
+1. Entrá a la página de OpenAI: https://beta.openai.com/signup/.
+2. Registrate con tu email y crea una cuenta.
+3. Una vez que estés adentro, andá a la sección "API Keys" en el menú de la izquierda.
+4. Hacé clic en el botón "Create an API key" y copiá la clave que te aparece.
+
+¡Eso es todo, amigx! Ahora tenés tu clave de la API de OpenAI. No te olvides de ponerla en la variable `openai.api_key` en el script para que todo funcione de 10. 🎉
+
 Ahora ya podés usar el script como te expliqué en la parte de "Cómo usarlo". ¡Disfrutá transcribiendo y analizando videos con OpenAI! 🚀
 
 ## 🤝 Cómo colaborar
