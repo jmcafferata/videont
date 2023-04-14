@@ -1,3 +1,5 @@
+![A 90s poster of a VHS video's DNA getting transcribed by an app](https://github.com/jmcafferata/videont/blob/master/videont-cover.jpg?raw=true)
+
 # 🚀 Transcripción y Análisis de Videos con OpenAI 🎥
 
 Che, te tengo una noticia re copada: este script en Python te permite transcribir y analizar videos usando los modelos Whisper ASR y GPT-4 de OpenAI 😎. Podes dividir los videos en pedacitos, transcribir esos pedacitos, y después usar GPT-4 para responder preguntas basadas en las transcripciones. Re piola, ¿no? 🤯
