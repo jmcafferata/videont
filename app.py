@@ -148,15 +148,14 @@ db = 'transcriptions.csv'
 
 
 
-openai.api_key = "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"
+openai.api_key = ""
 system = ''
 description = ""
-language = "es"
+language = "en"
 
 
 
-# partir_video(input_file)
-# transcribe_audios(description,language)
-while True:
-    query = input("Hacé tu pregunta: ")
-    make_questions(db,query,system)
+partir_video(input_file)
+transcribe_audios(description,language)
+query = input("Hacé tu pregunta: ")
+make_questions(db,query,system)
