@@ -1,57 +1,57 @@
-## OpenAI Video Transcription and Analysis
+# 🚀 Transcripción y Análisis de Videos con OpenAI 🎥
 
-This Python script allows you to transcribe and analyze videos using OpenAI's Whisper ASR and GPT-4 models. It can split video files into chunks, transcribe these chunks, and then use GPT-4 to answer user queries based on the transcriptions.
+Che, te tengo una noticia re copada: este script en Python te permite transcribir y analizar videos usando los modelos Whisper ASR y GPT-4 de OpenAI 😎. Podes dividir los videos en pedacitos, transcribir esos pedacitos, y después usar GPT-4 para responder preguntas basadas en las transcripciones. Re piola, ¿no? 🤯
 
-### Features
+## ✨ Lo que podes hacer
 
-- Split video files into 150-second chunks
-- Transcribe video chunks using OpenAI's Whisper ASR model
-- Save transcriptions as CSV files
-- Use GPT-4 to answer user queries based on transcriptions
+- Dividir videos en pedacitos de 150 segundos
+- Transcribir esos pedacitos usando Whisper ASR de OpenAI
+- Guardar las transcripciones como archivos CSV
+- Usar GPT-4 para responder preguntas basadas en las transcripciones
 
-### Prerequisites
+## 🛠 Lo que necesitas
 
 - Python 3
-- OpenAI API key
+- Clave de la API de OpenAI
 - Google Text-to-Speech (gTTS)
 - ffmpeg
 - PyDub
 - pandas
 - numpy
 
-### Installation
+## 🏃‍♂️ Cómo ponerlo a andar
 
-1. Clone this repository
-2. Install the required packages
+1. Copiate este repositorio
+2. Instalá los paquetes que hacen falta
    ```
    pip install -r requirements.txt
    ```
-3. Add your OpenAI API key to the `openai.api_key` variable in the script
+3. Poné tu clave de la API de OpenAI en la variable `openai.api_key` en el script
 
-### Usage
+## 🎯 Cómo usarlo
 
-1. Place the video file (mp4 format) that you want to transcribe in the same directory as the script
-2. Run the script:
+1. Meté el video (en formato mp4) que quieras transcribir en la misma carpeta que el script
+2. Ejecutá el script:
    ```
    python video_transcription_analysis.py
    ```
-3. The script will automatically split the video into 150-second chunks, transcribe them, and save the transcriptions as a CSV file
-4. Enter your query when prompted, and the script will use GPT-4 to answer it based on the transcriptions
-5. The GPT-4 generated answer will be displayed in the console
+3. El script automáticamente va a dividir el video en pedacitos de 150 segundos, transcribirlos, y guardar las transcripciones en un archivo CSV
+4. Cuando te lo pida, hacé tu pregunta y el script va a usar GPT-4 para responderte basándose en las transcripciones
+5. La respuesta que te tira GPT-4 va a aparecer en la consola
 
-### Example
+## 🎉 Ejemplo
 
 ```
 $ python video_transcription_analysis.py
-Output: Video split into chunks and transcriptions saved as a CSV file
-$ Hacé tu pregunta: What is the main topic of the video?
-Output: The main topic of the video is...
+Resultado: El video se dividió en pedacitos y las transcripciones se guardaron en un archivo CSV
+$ Hacé tu pregunta: ¿De qué se trata principalmente el video?
+Resultado: El tema principal del video es...
 ```
 
-### Contributing
+## 🤝 Cómo colaborar
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Si querés ayudar, metele con los pull requests. Si tenés una idea grosa para cambiar algo, abrí un issue primero para charlarlo.
 
-### License
+## 📄 Licencia
 
 [MIT](https://choosealicense.com/licenses/mit/)
