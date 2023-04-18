@@ -29,7 +29,7 @@ Che, te tengo una noticia re copada: este script en Python te permite transcribi
    pip install -r requirements.txt
    ```
 3. Poné tu clave de la API de OpenAI en la variable `openai.api_key` en el script
-4. Poné en la variable `system` la personalidad de tu AI. Ejemplo: `Sos Videon't, un bot que interpreta videos y audios`
+4. Poné en la variable `system` la personalidad de tu AI. Ejemplo: `"Sos Videon't, un bot que interpreta videos y audios"`
 5. Poné en la variable `description` una descripción del archivo para ayudar a Videon't.
 6. Poné otro idioma en `language` si no querés que sea español.
 
