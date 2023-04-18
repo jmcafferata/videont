@@ -141,9 +141,11 @@ def make_questions(db, query,system):
     )
     print(gpt_response.choices[0].message.content)
 
-# get the only mp4 file in the cwd
-files = os.listdir()
-input_file = [file for file in files if file.endswith(".mp4")][0]
+# get the only file in the /input folder
+input_file = os.listdir('input')[0]
+input_file = 'input/' + input_file
+
+
 db = 'transcriptions.csv'
 
 
@@ -151,7 +153,7 @@ db = 'transcriptions.csv'
 openai.api_key = ""
 system = ''
 description = ""
-language = "en"
+language = "es"
 
 
 
