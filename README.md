@@ -1,12 +1,12 @@
 ![A 90s poster of a VHS video's DNA getting transcribed by an app](https://github.com/jmcafferata/videont/blob/master/videont-cover.jpg?raw=true)
 
-# 🚀 Transcripción y Análisis de Videos con OpenAI 🎥
+# 🚀 Transcripción y análisis de videos y audios largos con OpenAI 🎥
 
-Che, te tengo una noticia re copada: este script en Python te permite transcribir y analizar videos usando los modelos Whisper ASR y GPT-4 de OpenAI 😎. Podes dividir los videos en pedacitos, transcribir esos pedacitos, y después usar GPT-4 para responder preguntas basadas en las transcripciones. Re piola, ¿no? 🤯
+Che, te tengo una noticia re copada: este script en Python te permite transcribir y analizar videos y audios usando los modelos Whisper ASR y GPT-4 de OpenAI 😎. Podes dividir los archivos en pedacitos, transcribir esos pedacitos, y después usar GPT-4 para responder preguntas basadas en las transcripciones. Re piola, ¿no? 🤯
 
 ## ✨ Lo que podes hacer
 
-- Dividir videos en pedacitos de 150 segundos
+- Dividir videos y audios en pedacitos de 150 segundos
 - Transcribir esos pedacitos usando Whisper ASR de OpenAI
 - Guardar las transcripciones como archivos CSV
 - Usar GPT-4 para responder preguntas basadas en las transcripciones
@@ -29,10 +29,13 @@ Che, te tengo una noticia re copada: este script en Python te permite transcribi
    pip install -r requirements.txt
    ```
 3. Poné tu clave de la API de OpenAI en la variable `openai.api_key` en el script
+4. Poné en la variable `system` la personalidad de tu AI. Ejemplo: `Sos Videon't, un bot que interpreta videos y audios`
+5. Poné en la variable `description` una descripción del archivo para ayudar a Videon't.
+6. Poné otro idioma en `language` si no querés que sea español.
 
 ## 🎯 Cómo usarlo
 
-1. Meté el video (en formato mp4) que quieras transcribir en la misma carpeta que el script
+1. Meté el archivo que quieras transcribir en la carpeta "input"
 2. Ejecutá el script:
    ```
    python app.py
