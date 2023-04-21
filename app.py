@@ -8,7 +8,6 @@ from openai.embeddings_utils import cosine_similarity
 import numpy as np
 import subprocess
 from gtts import gTTS
-from playsound import playsound
 import os
 from pydub import AudioSegment
 from pydub.playback import play
