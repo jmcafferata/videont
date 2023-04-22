@@ -7,35 +7,18 @@ from openai.embeddings_utils import get_embedding
 from openai.embeddings_utils import cosine_similarity
 import numpy as np
 import subprocess
-from gtts import gTTS
 import os
-from pydub import AudioSegment
-from pydub.playback import play
 from io import StringIO
 import tempfile
 import numpy as np
 from ast import literal_eval
 import re
 
-def play_tts_message(tts_message):
-    tts = gTTS(text=tts_message, lang='en')
-
-    # Save the TTS message to a temporary file in the current working directory and play it
-    tmp_file = "temp_tts.mp3"
-    tts.save(tmp_file)
-
-    # Play the temporary file using pydub
-    audio = AudioSegment.from_mp3(tmp_file)
-    play(audio)
-
-    # Remove the temporary file after playing it if it exists
-    os.remove(tmp_file)
 
 
 
 def partir_video(input_file):
 
-    play_tts_message("Partiendo el video en audios de 150 segundos")
 
     output_pattern = 'output_%03d.mp3'
 
@@ -64,7 +47,6 @@ def transcribe_audios(prompt, language):
         file_number = file_number[-3:]
 
         with open(audio_file, "rb") as file:
-            play_tts_message("Transcribiendo el audio")
             transcription_object = openai.Audio.transcribe(
                 "whisper-1", file, language=language, prompt=prompt
             )
@@ -87,7 +69,6 @@ def transcribe_audios(prompt, language):
         with open(csv_file, 'a', encoding='utf-8') as f:
             df.to_csv(f, header=False, index=False, encoding='utf-8', sep='|', line_terminator='\n')
 
-    play_tts_message("Transcripciones guardadas en archivo CSV")
 
 
 
