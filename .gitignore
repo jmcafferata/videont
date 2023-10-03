@@ -1,3 +1,5 @@
 pre/
 post/
 archive/
+venv/
+input/*.MP3
