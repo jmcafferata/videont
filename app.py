@@ -134,7 +134,7 @@ def make_questions(db,system):
 
 db = 'transcriptions.csv'
 
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 system = 'Prompt:<data and instructions>\n\nResponse:<answer>'
 description = ""
 language = "es"
